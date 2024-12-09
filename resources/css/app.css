@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+.html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.bg-shadow {
+    position: relative;
+}
+
+.bg-shadow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.font-family-karla {
+    font-family: karla;
+}
+
+.bg-sidebar {
+    background: #120A33;
+}
+
+.cta-btn {
+    color: #120A33;
+}
+
+.upgrade-btn {
+    background: #120A33;
+}
+
+.upgrade-btn:hover {
+    background: #120A33;
+}
+
+.active-nav-link {
+    background: #120A33;
+}
+
+.nav-item:hover {
+    background: #120A33;
+}
+
+.account-link:hover {
+    background: #120A33;
+}
+
+.fixed-size {
+    width: 300px;
+    /* Ajusta el tamaño según tus necesidades */
+    height: 200px;
+    /* Ajusta el tamaño según tus necesidades */
+}
+
+.fixed-size img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.fixed-size {
+    width: 100%;
+    /* Las columnas ocuparán todo el ancho */
+    height: 300px;
+    /* Ajusta la altura según tus necesidades */
+}
+
+.fixed-size img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
